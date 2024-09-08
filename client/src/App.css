@@ -1,0 +1,444 @@
+.App {
+  text-align: center;
+  background-color: #F5F7FB;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button:hover{
+  opacity: 0.75;
+}
+button{
+  z-index: 1;
+  border: none;
+}
+
+svg:hover{
+  fill: red;
+  cursor: pointer;
+}
+svg{
+  width: 20px;
+  position: sticky;
+  left: 100%;
+  padding-right: 20px;
+}
+
+.top-right{
+  position: fixed;
+  right: 0;
+  border-radius: 100%;
+  background-color: #FFFAD1;
+  width: 200px;
+  height: 200px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 100%;
+}
+.bottom-left{
+  position: fixed;
+  bottom: 0;
+  border-radius: 100%;
+  background-color: #DEEBF8;
+  width: 200px;
+  height: 200px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.intro{
+  background-color: #F5F7FB;
+  width: 100vw;
+  height: 90vh;
+}
+
+nav{
+  height: 10vh;
+  box-shadow: inset 0 -2px rgba(0,0,0,.2);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  width: 92.5vw;
+  margin-left: 3.75vw;
+  margin-right: 3.75vw;
+}
+nav > h1{
+  padding-left: 20px;
+  position: sticky;
+  top: 0;
+  font-size: 30px;
+}
+nav > button{
+  position: sticky;
+  left: 100%;
+  margin-right: 20px;
+  width: 10vw;
+  min-width: 100px;
+  height: 40px;
+  font-size: 22px;
+  color: #F5F7FB;
+  background-color: #4D5B9E;
+  border-radius: 8px;
+  cursor: pointer;
+}
+nav > p{
+  position: sticky;
+  left: 100%;
+  margin-right: 20px;
+  font-size: 22px;
+}
+
+.form{
+  width: 100vw;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+}
+.inputs{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-top: 5vh;
+}
+.inputs > label{
+  text-align: right;
+  margin-right: 10px;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  font-size: 22px;
+}
+.inputs > input{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  width: 20vw;
+  font-size: 18px;
+}
+.form > button{
+  width: 10vw;
+  min-width: 100px;
+  height: 40px;
+  font-size: 22px;
+  color: #F5F7FB;
+  background-color: #4D5B9E;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.user{
+  height: 85vh;
+}
+.buttons{
+  display: grid;
+  column-gap: 5%;
+  grid-template-columns: 30vw 30vw 30vw;
+  margin-top: 5vh;
+}
+.buttons > button{
+  width: 70%;
+  margin-left: 15%;
+  font-size: 22px;
+  height: 40px;
+  color: #F5F7FB;
+  background-color: #4D5B9E;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.myquizzes{
+  margin-left: 2vw;
+}
+.myquizzes > button{
+  width: 20vw;
+  font-size: 22px;
+  height: 40px;
+  color: #F5F7FB;
+  background-color: #4D5B9E;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.quizzes{
+  margin-top: 2vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  row-gap: 2vh;
+}
+.quizzes > div{
+  text-align: left;
+  font-size: 22px;
+  border: solid;
+  border-radius: 8px;
+  margin: 5px;
+  width: 45vw;
+  padding-left: 1%;
+}
+
+.quiz-form{
+  width: 80vw;
+  height: 90vh;
+  border: solid;
+  border-radius: 8px;
+  position: absolute;
+  top: 5vh;
+  left: 10vw;
+  background-color: white;
+  overflow-y: scroll;
+  font-size: 20px;
+  z-index: 1;
+}
+.quiz-form > label{
+  position: relative;
+  right: 25px;
+}
+.quiz-form > input{
+  position: relative;
+  right: 30px;
+  margin: 10px;
+  height: 20px;
+  width: 20vw;
+}
+.quiz-btn{
+  margin: 10px;
+  width: 120px;
+  font-size: 16px;
+  height: 30px;
+  color: #F5F7FB;
+  background-color: #4D5B9E;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.quiz-form-btn{
+  position: sticky;
+  top: 100%;
+  background-color: white;
+  border-top: solid;
+}
+#hh,#mm,#ss{
+  width: 50px;
+}
+.create-area{
+  display: grid;
+  grid-template-columns: 10% 80%;
+  text-align: right;
+  gap: 10px;
+  border-top: solid;
+  border-bottom: solid;
+  padding: 10px 0 10px;
+}
+.create-area input{
+  font-size: 16px;
+  height: 20px;
+}
+.create-area p{
+  margin: 0;
+  text-align: center;
+  height: 20px;
+}
+.create-area > button{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 120px;
+  margin-left: 36vw;
+  font-size: 16px;
+  height: 30px;
+  color: #F5F7FB;
+  background-color: #4D5B9E;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.question{
+  text-align: left;
+  padding-left: 10px;
+  border-bottom: solid;
+}
+.question > button{
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
+  font-size: 16px;
+  height: 30px;
+  color: #F5F7FB;
+  background-color: #4D5B9E;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.search{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.search > h1{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.search > button{
+  width: 120px;
+  font-size: 22px;
+  height: 30px;
+  color: #F5F7FB;
+  background-color: #4D5B9E;
+  border-radius: 8px;
+  cursor: pointer;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-left: 10vw;
+}
+.search > input{
+  font-size: 18px;
+  width: 20vw;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin-left: 37.5vw;
+}
+
+.quiz-body{
+  background-color: #F5F7FB;
+  position: absolute;
+  height: 82.5vh;
+  width: 100%;
+  overflow-y: scroll;
+  z-index: -1;
+}
+.quiz-body > div > p{
+  font-size: 18px;
+  text-align: left;
+  margin-left: 4vw;
+}
+.quiz-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 92.5vh;
+  background-color: #F5F7FB;
+  height: 7.5vh;
+  z-index: -1;
+  width: 100vw;
+}
+.quiz-footer > button{
+  width: 10vw;
+  min-width: 100px;
+  height: 5.5vh;
+  font-size: 22px;
+  color: #F5F7FB;
+  background-color: #4D5B9E;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.result{
+  height: 87vh;
+  background-color: #F5F7FB;
+  margin-top: 0;
+  overflow-y: scroll;
+  /* text-align: left; */
+  z-index: -1;
+}
+.result > div > p{
+  font-size: 18px;
+  text-align: left;
+  margin-left: 4vw;
+}
+.result-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 92.5vh;
+  background-color: #F5F7FB;
+  height: 7.5vh;
+  width: 100vw;
+}
+.result-footer > button{
+  width: 10vw;
+  min-width: 100px;
+  height: 5.5vh;
+  font-size: 22px;
+  color: #F5F7FB;
+  background-color: #4D5B9E;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0 10vw;
+}
+
+.timer{
+  position: absolute;
+  top: 0;
+  left: 45vw;
+}
+
+.waiting-screen{
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 90vh;
+  background-color: #F5F7FB;
+}
+
+.loader {
+  border: 0.8vw solid #f3f3f3;
+  border-top: 0.8vw solid gray;
+  border-radius: 50%;
+  width: 5vw;
+  height: 5vw;
+  animation: spin 2s linear infinite;
+  margin-left: 47.5vw;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* MEDIA QUERIES */
+
+/* Tablets */
+@media screen and (max-width:768px){
+  nav{
+    /* background-color: #61dafb; */
+  }
+}
+
+/* Mobiles */
+@media screen and (max-width:480px){
+  nav{
+    /* background-color: forestgreen; */
+  }
+}
